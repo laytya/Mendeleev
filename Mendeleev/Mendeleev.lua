@@ -54,15 +54,13 @@ function Mendeleev:HookTooltips()
 
 			local orig, linkFunc = key,value
 			local func = function(tooltip,a,b,c)
-				local r1,r2,r3 = self.hooks[GameTooltip][orig](tooltip,a,b,c)
 				self:ParseTooltip(tooltip,linkFunc(a,b,c))
-				return r1,r2,r3
 			end
-			self:Hook(GameTooltip, orig, func)
+			self:SecureHook(GameTooltip, orig, func)
 
 	end
 
-	self:Hook("SetItemRef", "SetItemRef", true)
+	self:SecureHook("SetItemRef", "SetItemRef", true)
 end
 
 --Ace methods
