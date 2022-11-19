@@ -1,6 +1,6 @@
 ## Interface:  11200
 ## Title: Mendeleev |cff7fff7f -Ace2-|r
-## Version: 1.0
+## Version: 1.1
 ## Notes: Mendeleev adds a great deal of information to itemtooltips.
 ## Author: MoonWolf
 ## DefaultState: enabled
